@@ -1,0 +1,32 @@
+[ {
+  "id" : 1,
+  "name" : "Test Meeting",
+  "responsiblePerson" : "Henrikas Barzdenis",
+  "description" : "TEST meeting",
+  "category" : "HUB",
+  "type" : "IN_PERSON",
+  "participant" : [ {
+    "firstName" : "Henrikas",
+    "lastName" : "Barzdenis",
+    "author" : true
+  }, {
+    "firstName" : "User1",
+    "lastName" : "User1LastName",
+    "author" : false
+  }, {
+    "firstName" : "User2",
+    "lastName" : "User2LastName",
+    "author" : false
+  }, {
+    "firstName" : "User3",
+    "lastName" : "User3LastName",
+    "author" : false
+  } ],
+  "author" : {
+    "firstName" : "Henrikas",
+    "lastName" : "Barzdenis",
+    "author" : true
+  },
+  "startDate" : "2022-05-21",
+  "endDate" : "2022-05-22"
+} ]

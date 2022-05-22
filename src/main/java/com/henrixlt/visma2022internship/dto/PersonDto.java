@@ -1,16 +1,14 @@
-package com.henrixlt.visma2022internship.modal;
+package com.henrixlt.visma2022internship.dto;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Builder
-@AllArgsConstructor
 @NoArgsConstructor
-public class Person {
+@AllArgsConstructor
+public class PersonDto {
     private String firstName;
     private String lastName;
-    private boolean author = false;
+    private boolean author;
 }
