@@ -171,7 +171,7 @@ http://localhost:8080/meetings/3/add
   key = category  
   /meetings/byResPerson
   key = person  
-  /meetings/byStartFromDate
+  /meetings/byStartDate
   key = date 
   /meetings/bytDate
   key = start 
