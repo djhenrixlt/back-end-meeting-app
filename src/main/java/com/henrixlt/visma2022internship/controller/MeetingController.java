@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.io.IOException;
-import java.time.LocalDate;
 import java.util.List;
 
 @AllArgsConstructor
@@ -96,7 +95,7 @@ public class MeetingController {
 
     @GetMapping("/bytDate")
     public ResponseEntity<List<MeetingDto>> findBytDate(@RequestParam("start") String start,
-                                                       @RequestParam("end") String end) throws IOException {
+                                                        @RequestParam("end") String end) throws IOException {
         return ResponseEntity.ok(meetingService.findBtDate(start, end));
     }
 

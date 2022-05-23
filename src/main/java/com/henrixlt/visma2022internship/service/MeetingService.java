@@ -119,7 +119,6 @@ public class MeetingService {
         if (existByName(people, persondto.getLastName())) {
             throw new PersonException(persondto.getLastName());
         }
-
         people.add(getPerson(persondto));
         meeting.setParticipant(people);
         meetings.set(index, meeting);
@@ -149,6 +148,7 @@ public class MeetingService {
         meetings.set(index, meeting);
         fileReader.writeAll(meetings);
     }
+
     //TODO: All find methods make it to one
     //TODO: Fif Exception tiping correction
     public List<MeetingDto> findByDescription(String meetingDesc) throws IOException {
@@ -240,6 +240,7 @@ public class MeetingService {
                 .firstName(persondto.getFirstName())
                 .lastName(persondto.getLastName())
                 .author(false)
+                .timeNow(persondto.getTimeNow())
                 .build();
     }
 

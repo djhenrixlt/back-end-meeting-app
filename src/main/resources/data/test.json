@@ -1,60 +1,5 @@
 [ {
   "id" : 1,
-  "name" : "Test Meeting",
-  "responsiblePerson" : "Henrikas Barzdenis",
-  "description" : "TEST meeting",
-  "category" : "HUB",
-  "type" : "IN_PERSON",
-  "participant" : [ {
-    "firstName" : "Henrikas",
-    "lastName" : "Barzdenis",
-    "author" : true
-  }, {
-    "firstName" : "User1",
-    "lastName" : "User1LastName",
-    "author" : false
-  }, {
-    "firstName" : "User2",
-    "lastName" : "User2LastName",
-    "author" : false
-  }, {
-    "firstName" : "User4",
-    "lastName" : "User4LastName",
-    "author" : false
-  }, {
-    "firstName" : "User5",
-    "lastName" : "User5LastName",
-    "author" : false
-  }, {
-    "firstName" : "User5",
-    "lastName" : "User6LastName",
-    "author" : false
-  }, {
-    "firstName" : "User5",
-    "lastName" : "User7LastName",
-    "author" : false
-  }, {
-    "firstName" : "User5",
-    "lastName" : "User8LastName",
-    "author" : false
-  }, {
-    "firstName" : "User5",
-    "lastName" : "User9LastName",
-    "author" : false
-  }, {
-    "firstName" : "User5",
-    "lastName" : "User10LastName",
-    "author" : false
-  } ],
-  "author" : {
-    "firstName" : "Henrikas",
-    "lastName" : "Barzdenis",
-    "author" : true
-  },
-  "startDate" : "2022-05-21",
-  "endDate" : "2022-05-22"
-}, {
-  "id" : 2,
   "name" : "Arnold Meeting May",
   "responsiblePerson" : "Arnold",
   "description" : "Arnold Meeting",
@@ -63,48 +8,291 @@
   "participant" : [ {
     "firstName" : "ARNOLD",
     "lastName" : "BOROW",
-    "author" : true
+    "author" : true,
+    "timeNow" : "2022-05-23 16:08:05"
+  }, {
+    "firstName" : "JAC",
+    "lastName" : "King",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:08:05"
+  }, {
+    "firstName" : "JAC",
+    "lastName" : "MARON",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:08:05"
+  }, {
+    "firstName" : "Nikita",
+    "lastName" : "Baroc",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:09:04"
+  }, {
+    "firstName" : "Melek",
+    "lastName" : "Zahari",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:40:20"
+  }, {
+    "firstName" : "Emmanuil",
+    "lastName" : "Murugan",
+    "author" : false,
+    "timeNow" : "2022-05-23 17:01:10"
   } ],
   "author" : {
     "firstName" : "ARNOLD",
     "lastName" : "BOROW",
-    "author" : true
+    "author" : true,
+    "timeNow" : "2022-05-23 16:08:05"
   },
   "startDate" : "2022-05-23",
   "endDate" : "2022-05-24"
-}
-, {
-  "id" : 3,
-  "name" : "Wednesday meeting ",
-  "responsiblePerson" : "Arnold",
-  "description" : "weekdays meeting",
-  "category" : "TEAM_BUILDING",
-  "type" : "LIVE",
+}, {
+  "id" : 2,
+  "name" : "Fast Meeting",
+  "responsiblePerson" : "Lena",
+  "description" : "Rendi Monday Meeting",
+  "category" : "CODE_MONKEY",
+  "type" : "IN_PERSON",
   "participant" : [ {
-    "firstName" : "ARNOLD",
-    "lastName" : "BOROW",
-    "author" : false
-  },
-    {
-      "firstName" : "Hermione",
-      "lastName" : "Sterling",
-      "author" : false
-    },
-    {
-      "firstName" : "ELon",
-      "lastName" : "Musk",
-      "author" : false
-    },
-    {
-      "firstName" : "BORIS",
-      "lastName" : "Jons",
-      "author" : false
-    }],
+    "firstName" : "Lena",
+    "lastName" : "Kolos",
+    "author" : true,
+    "timeNow" : "2022-05-23 16:27:32"
+  }, {
+    "firstName" : "JAC",
+    "lastName" : "King",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:27:32"
+  }, {
+    "firstName" : "JAC",
+    "lastName" : "MARON",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:27:32"
+  }, {
+    "firstName" : "David",
+    "lastName" : "Cyril",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:40:34"
+  } ],
   "author" : {
-    "firstName" : "ARNOLD",
-    "lastName" : "BOROW",
-    "author" : false
+    "firstName" : "Lena",
+    "lastName" : "Kolos",
+    "author" : true,
+    "timeNow" : "2022-05-23 16:27:32"
+  },
+  "startDate" : "2022-05-23",
+  "endDate" : "2022-05-24"
+}, {
+  "id" : 3,
+  "name" : "Daily Meeting",
+  "responsiblePerson" : "Ercole",
+  "description" : "Daily  Meeting",
+  "category" : "TEAM_BUILDING",
+  "type" : "IN_PERSON",
+  "participant" : [ {
+    "firstName" : "Maeva",
+    "lastName" : "Hamid",
+    "author" : true,
+    "timeNow" : "2022-05-23 16:32:48"
+  }, {
+    "firstName" : "Pavla",
+    "lastName" : "Clover",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:32:48"
+  }, {
+    "firstName" : "Royal",
+    "lastName" : "Higuel",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:32:48"
+  }, {
+    "firstName" : "Maeva",
+    "lastName" : "Hamid",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:32:48"
+  }, {
+    "firstName" : "Madelon",
+    "lastName" : "Adinah",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:32:48"
+  }, {
+    "firstName" : "Kibwe",
+    "lastName" : "Alba",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:32:48"
+  }, {
+    "firstName" : "Dipa",
+    "lastName" : "Valli",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:32:48"
+  }, {
+    "firstName" : "Adetokunbo",
+    "lastName" : "Johnna",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:32:48"
+  }, {
+    "firstName" : "Lucia",
+    "lastName" : "Ajay",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:32:48"
+  }, {
+    "firstName" : "Royal",
+    "lastName" : "Higuel",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:32:48"
+  }, {
+    "firstName" : "Zlatko",
+    "lastName" : "Tonći",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:32:48"
+  }, {
+    "firstName" : "Kurosh",
+    "lastName" : "Nirmal",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:40:47"
+  } ],
+  "author" : {
+    "firstName" : "Maeva",
+    "lastName" : "Hamid",
+    "author" : true,
+    "timeNow" : "2022-05-23 16:32:48"
+  },
+  "startDate" : "2022-05-23",
+  "endDate" : "2022-05-24"
+}, {
+  "id" : 4,
+  "name" : "Friday Meeting",
+  "responsiblePerson" : "Lilli",
+  "description" : "Friday  Meeting",
+  "category" : "TEAM_BUILDING",
+  "type" : "IN_PERSON",
+  "participant" : [ {
+    "firstName" : "Lilli",
+    "lastName" : "Darek",
+    "author" : true,
+    "timeNow" : "2022-05-23 16:34:40"
+  }, {
+    "firstName" : "Fareeha",
+    "lastName" : "Chris",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:34:40"
+  }, {
+    "firstName" : "Royal",
+    "lastName" : "Higuel",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:34:40"
+  }, {
+    "firstName" : "Neirin",
+    "lastName" : "Raj",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:34:40"
+  }, {
+    "firstName" : "Evaristo",
+    "lastName" : "Nauja",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:34:40"
+  }, {
+    "firstName" : "Kibwe",
+    "lastName" : "Alba",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:34:40"
+  }, {
+    "firstName" : "Dipa",
+    "lastName" : "Valli",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:34:40"
+  }, {
+    "firstName" : "Adetokunbo",
+    "lastName" : "Johnna",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:34:40"
+  }, {
+    "firstName" : "Lucia",
+    "lastName" : "Ajay",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:34:40"
+  }, {
+    "firstName" : "Hikmat",
+    "lastName" : "Vitalianus",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:34:40"
+  }, {
+    "firstName" : "Wigheard",
+    "lastName" : "Jorah",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:34:40"
+  }, {
+    "firstName" : "Emmanuil",
+    "lastName" : "Murugan",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:40:58"
+  } ],
+  "author" : {
+    "firstName" : "Lilli",
+    "lastName" : "Darek",
+    "author" : true,
+    "timeNow" : "2022-05-23 16:34:40"
   },
   "startDate" : "2022-05-25",
   "endDate" : "2022-05-26"
-}]
+}, {
+  "id" : 5,
+  "name" : "New Meeting",
+  "responsiblePerson" : "Riina",
+  "description" : "New Meeting",
+  "category" : "SHORT",
+  "type" : "IN_PERSON",
+  "participant" : [ {
+    "firstName" : "Riina",
+    "lastName" : "Nausikaa",
+    "author" : true,
+    "timeNow" : "2022-05-23 16:36:19"
+  } ],
+  "author" : {
+    "firstName" : "Riina",
+    "lastName" : "Nausikaa",
+    "author" : true,
+    "timeNow" : "2022-05-23 16:36:19"
+  },
+  "startDate" : "2022-05-25",
+  "endDate" : "2022-05-26"
+}, {
+  "id" : 6,
+  "name" : "Dorin Meeting",
+  "responsiblePerson" : "Dorin",
+  "description" : "New Meeting",
+  "category" : "CODE_MONKEY",
+  "type" : "LIVE",
+  "participant" : [ {
+    "firstName" : "Dorin",
+    "lastName" : "Gadise",
+    "author" : true,
+    "timeNow" : "2022-05-23 16:39:41"
+  } ],
+  "author" : {
+    "firstName" : "Dorin",
+    "lastName" : "Gadise",
+    "author" : true,
+    "timeNow" : "2022-05-23 16:39:41"
+  },
+  "startDate" : "2022-05-25",
+  "endDate" : "2022-05-26"
+}, {
+  "id" : 7,
+  "name" : "Salmon Meeting",
+  "responsiblePerson" : "Salmon",
+  "description" : "New Meeting",
+  "category" : "CODE_MONKEY",
+  "type" : "LIVE",
+  "participant" : [ {
+    "firstName" : "Salmon",
+    "lastName" : "Norvi",
+    "author" : true,
+    "timeNow" : "2022-05-23 17:04:17"
+  } ],
+  "author" : {
+    "firstName" : "Salmon",
+    "lastName" : "Norvi",
+    "author" : true,
+    "timeNow" : "2022-05-23 17:04:17"
+  },
+  "startDate" : "2022-05-25",
+  "endDate" : "2022-05-26"
+} ]
