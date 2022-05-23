@@ -29,9 +29,7 @@ public class FileReader {
 
     public List<Meeting> readAll() throws  IOException {
         TypeReference<List<Meeting>> mapType = new TypeReference<List<Meeting>>() {};
-        List<Meeting> jsonMeetingToLIst = mapper.readValue(PATH.toFile(),mapType);
-        log.info(String.valueOf(jsonMeetingToLIst));
-        return  jsonMeetingToLIst;
+        return mapper.readValue(PATH.toFile(),mapType);
     }
 
     public void writeAll(List<Meeting> meetings) throws IOException {
