@@ -6,7 +6,6 @@ import com.henrixlt.visma2022internship.modal.Type;
 import lombok.*;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.List;
 
 @ToString
@@ -26,7 +25,7 @@ public class Meeting {
     private List<Person> participant;
     private Person author;
     private LocalDate startDate;
-    private LocalDate  endDate;
+    private LocalDate endDate;
 
 
 }

@@ -18,8 +18,32 @@
     "lastName" : "User2LastName",
     "author" : false
   }, {
-    "firstName" : "User3",
-    "lastName" : "User3LastName",
+    "firstName" : "User4",
+    "lastName" : "User4LastName",
+    "author" : false
+  }, {
+    "firstName" : "User5",
+    "lastName" : "User5LastName",
+    "author" : false
+  }, {
+    "firstName" : "User5",
+    "lastName" : "User6LastName",
+    "author" : false
+  }, {
+    "firstName" : "User5",
+    "lastName" : "User7LastName",
+    "author" : false
+  }, {
+    "firstName" : "User5",
+    "lastName" : "User8LastName",
+    "author" : false
+  }, {
+    "firstName" : "User5",
+    "lastName" : "User9LastName",
+    "author" : false
+  }, {
+    "firstName" : "User5",
+    "lastName" : "User10LastName",
     "author" : false
   } ],
   "author" : {
@@ -29,4 +53,58 @@
   },
   "startDate" : "2022-05-21",
   "endDate" : "2022-05-22"
-} ]
+}, {
+  "id" : 2,
+  "name" : "Arnold Meeting May",
+  "responsiblePerson" : "Arnold",
+  "description" : "Arnold Meeting",
+  "category" : "SHORT",
+  "type" : "LIVE",
+  "participant" : [ {
+    "firstName" : "ARNOLD",
+    "lastName" : "BOROW",
+    "author" : true
+  } ],
+  "author" : {
+    "firstName" : "ARNOLD",
+    "lastName" : "BOROW",
+    "author" : true
+  },
+  "startDate" : "2022-05-23",
+  "endDate" : "2022-05-24"
+}
+, {
+  "id" : 3,
+  "name" : "Wednesday meeting ",
+  "responsiblePerson" : "Arnold",
+  "description" : "weekdays meeting",
+  "category" : "TEAM_BUILDING",
+  "type" : "LIVE",
+  "participant" : [ {
+    "firstName" : "ARNOLD",
+    "lastName" : "BOROW",
+    "author" : false
+  },
+    {
+      "firstName" : "Hermione",
+      "lastName" : "Sterling",
+      "author" : false
+    },
+    {
+      "firstName" : "ELon",
+      "lastName" : "Musk",
+      "author" : false
+    },
+    {
+      "firstName" : "BORIS",
+      "lastName" : "Jons",
+      "author" : false
+    }],
+  "author" : {
+    "firstName" : "ARNOLD",
+    "lastName" : "BOROW",
+    "author" : false
+  },
+  "startDate" : "2022-05-25",
+  "endDate" : "2022-05-26"
+}]
