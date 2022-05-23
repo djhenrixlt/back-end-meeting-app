@@ -194,7 +194,7 @@ public class MeetingService {
     public List<MeetingDto> findBtDate(LocalDate startTime, LocalDate endTime) throws IOException {
         return fileReader.readAll()
                 .stream()
-                .filter(time -> (time.getStartDate().compareTo(startTime) > 0)
+                .filter(time -> (time.getStartDate().compareTo(startTime) >= 0)
                         && (time.getEndDate().compareTo(endTime) <= 0))
                 .map(MeetMapper.MEET_MAPPER::mapDto)
                 .collect(Collectors.toList());

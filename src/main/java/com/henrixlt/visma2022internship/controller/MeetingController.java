@@ -95,9 +95,9 @@ public class MeetingController {
     }
 
     @GetMapping("/bytDate")
-    public ResponseEntity<List<MeetingDto>> findBytDate(@RequestParam("starting") LocalDate starting,
-                                                       @RequestParam("ending") LocalDate ending) throws IOException {
-        return ResponseEntity.ok(meetingService.findBtDate(starting, ending));
+    public ResponseEntity<List<MeetingDto>> findBytDate(@RequestParam("start") LocalDate start,
+                                                       @RequestParam("end") LocalDate end) throws IOException {
+        return ResponseEntity.ok(meetingService.findBtDate(start, end));
     }
 
     @GetMapping("/byNumberUsers")
