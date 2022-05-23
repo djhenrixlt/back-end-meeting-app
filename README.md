@@ -3,7 +3,7 @@
 
 Visma 2022 Internship Task: meeting spring boot app. 
 
-Application ca create and delete meetings. 
+Application can create and delete meetings. 
 
 You can add a person to the meeting and delete the person. 
 
