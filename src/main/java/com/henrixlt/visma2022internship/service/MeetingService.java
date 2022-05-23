@@ -77,7 +77,7 @@ public class MeetingService {
         if (meetingDto == null && !meetingDto.getAuthor().isAuthor()) {
             throw new MeetingException(meetingDto.getName());
         }
-        if (!existbyID(meetings, meetingDto.getId())) {
+        if (!existByID(meetings, meetingDto.getId())) {
             throw new MeetingException(meetingDto.getId());
         }
         int index = findMeeting(meetings, meetingDto.getId());
@@ -95,7 +95,7 @@ public class MeetingService {
         if (!meetingDto.getAuthor().isAuthor() || !meetingDto.getAuthor().getFirstName().equals(ADMIN)) {
             throw new MeetingException(meetingDto.getName());
         }
-        if (!existbyID(meetings, id)) {
+        if (!existByID(meetings, id)) {
             throw new MeetingException(id);
         }
         int index = findMeeting(meetings, id);
@@ -109,14 +109,14 @@ public class MeetingService {
         if (persondto == null && !persondto.isAuthor()) {
             throw new MeetingException(persondto.getFirstName());
         }
-        if (!existbyID(meetings, meetingID)) {
+        if (!existByID(meetings, meetingID)) {
             throw new MeetingException(meetingID);
         }
         int index = findMeeting(meetings, meetingID);
         Meeting meeting = meetings.get(index);
         List<Person> people = meeting.getParticipant();
 
-        if (existbyName(people, persondto.getLastName())) {
+        if (existByName(people, persondto.getLastName())) {
             throw new PersonException(persondto.getLastName());
         }
 
@@ -133,14 +133,14 @@ public class MeetingService {
         if (persondto == null && !persondto.isAuthor()) {
             throw new MeetingException(persondto.getFirstName());
         }
-        if (!existbyID(meetings, meetingID)) {
+        if (!existByID(meetings, meetingID)) {
             throw new MeetingException(meetingID);
         }
         int index = findMeeting(meetings, meetingID);
         Meeting meeting = meetings.get(index);
         List<Person> people = meeting.getParticipant();
 
-        if (!existbyName(people, persondto.getLastName())) {
+        if (!existByName(people, persondto.getLastName())) {
             throw new PersonException();
         }
 
@@ -183,7 +183,8 @@ public class MeetingService {
                 .collect(Collectors.toList());
     }
 
-    public List<MeetingDto> findStartFromDate(LocalDate meetingDate) throws IOException {
+    public List<MeetingDto> findStartFromDate(String startDate) throws IOException {
+        LocalDate meetingDate = LocalDate.parse(startDate);
         return fileReader.readAll()
                 .stream()
                 .filter(date -> date.getStartDate().compareTo(meetingDate) >= 0)
@@ -191,7 +192,9 @@ public class MeetingService {
                 .collect(Collectors.toList());
     }
 
-    public List<MeetingDto> findBtDate(LocalDate startTime, LocalDate endTime) throws IOException {
+    public List<MeetingDto> findBtDate(String startDate, String endDate) throws IOException {
+        LocalDate startTime = LocalDate.parse(startDate);
+        LocalDate endTime = LocalDate.parse(endDate);
         return fileReader.readAll()
                 .stream()
                 .filter(time -> (time.getStartDate().compareTo(startTime) >= 0)
@@ -213,7 +216,7 @@ public class MeetingService {
         return new ArrayList<>(fileReader.readAll());
     }
 
-    private boolean existbyID(List<Meeting> meetings, Long id) {
+    private boolean existByID(List<Meeting> meetings, Long id) {
         return meetings.stream()
                 .anyMatch(meet -> meet.getId().equals(id));
     }
@@ -227,7 +230,7 @@ public class MeetingService {
         return index;
     }
 
-    private boolean existbyName(List<Person> people, String lastName) {
+    private boolean existByName(List<Person> people, String lastName) {
         return people.stream()
                 .anyMatch(person -> person.getLastName().equals(lastName));
     }

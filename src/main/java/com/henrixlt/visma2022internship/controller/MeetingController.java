@@ -89,14 +89,14 @@ public class MeetingController {
         return ResponseEntity.ok(meetingService.findByResPerson(person));
     }
 
-    @GetMapping("/byStartFromDate")
-    public ResponseEntity<List<MeetingDto>> getByStartFromDate(@RequestParam("date") LocalDate date) throws IOException {
+    @GetMapping("/byStartDate")
+    public ResponseEntity<List<MeetingDto>> getByStartFromDate(@RequestParam("date") String date) throws IOException {
         return ResponseEntity.ok(meetingService.findStartFromDate(date));
     }
 
     @GetMapping("/bytDate")
-    public ResponseEntity<List<MeetingDto>> findBytDate(@RequestParam("start") LocalDate start,
-                                                       @RequestParam("end") LocalDate end) throws IOException {
+    public ResponseEntity<List<MeetingDto>> findBytDate(@RequestParam("start") String start,
+                                                       @RequestParam("end") String end) throws IOException {
         return ResponseEntity.ok(meetingService.findBtDate(start, end));
     }
 
