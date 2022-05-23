@@ -46,67 +46,49 @@ Did test everything with "Postman".
 
 You will Get like this:
 ```json
-]
- {
-        "id": 2,
-        "name": "Arnold Meeting May",
-        "responsiblePerson": "Arnold",
-        "description": "Arnold Meeting",
-        "category": "SHORT",
-        "type": "LIVE",
-        "participant": [
-            {
-                "firstName": "ARNOLD",
-                "lastName": "BOROW",
-                "author": true
-            }
-        ],
-        "author": {
-            "firstName": "ARNOLD",
-            "lastName": "BOROW",
-            "author": true
-        },
-        "startDate": "2022-05-23",
-        "endDate": "2022-05-24"
-    },
-    {
-        "id": 3,
-        "name": "Wednesday meeting ",
-        "responsiblePerson": "Arnold",
-        "description": "weekdays meeting",
-        "category": "TEAM_BUILDING",
-        "type": "LIVE",
-        "participant": [
-            {
-                "firstName": "ARNOLD",
-                "lastName": "BOROW",
-                "author": false
-            },
-            {
-                "firstName": "Hermione",
-                "lastName": "Sterling",
-                "author": false
-            },
-            {
-                "firstName": "ELon",
-                "lastName": "Musk",
-                "author": false
-            },
-            {
-                "firstName": "BORIS",
-                "lastName": "Jons",
-                "author": false
-            }
-        ],
-        "author": {
-            "firstName": "ARNOLD",
-            "lastName": "BOROW",
-            "author": false
-        },
-        "startDate": "2022-05-25",
-        "endDate": "2022-05-26"
-    }
-]
+]{
+  "id" : 6,
+  "name" : "Dorin Meeting",
+  "responsiblePerson" : "Dorin",
+  "description" : "New Meeting",
+  "category" : "CODE_MONKEY",
+  "type" : "LIVE",
+  "participant" : [ {
+    "firstName" : "Dorin",
+    "lastName" : "Gadise",
+    "author" : true,
+    "timeNow" : "2022-05-23 16:39:41"
+  } ],
+  "author" : {
+    "firstName" : "Dorin",
+    "lastName" : "Gadise",
+    "author" : true,
+    "timeNow" : "2022-05-23 16:39:41"
+  },
+  "startDate" : "2022-05-25",
+  "endDate" : "2022-05-26"
+}, {
+  "id" : 7,
+  "name" : "Salmon Meeting",
+  "responsiblePerson" : "Salmon",
+  "description" : "New Meeting",
+  "category" : "CODE_MONKEY",
+  "type" : "LIVE",
+  "participant" : [ {
+    "firstName" : "Salmon",
+    "lastName" : "Norvi",
+    "author" : true,
+    "timeNow" : "2022-05-23 17:04:17"
+  } ],
+  "author" : {
+    "firstName" : "Salmon",
+    "lastName" : "Norvi",
+    "author" : true,
+    "timeNow" : "2022-05-23 17:04:17"
+  },
+  "startDate" : "2022-05-25",
+  "endDate" : "2022-05-26"
+} ]
 ```
 #### New meeting:
 
@@ -120,30 +102,27 @@ Send like this:
 ```json
  {
      For Update Meeting PUT /meetings add this line: "id": 3,
-        "name": "Arnold Meeting May",
-        "responsiblePerson": "Arnold",
-        "description": "Arnold Meeting",
-        "category": "SHORT",
-        "type": "LIVE",
-        "participant": [
-            
-            {
-                "firstName": "ARNOLD",
-                "lastName": "BOROW"
-            },
-             {
-                "firstName": "ERIK",
-                "lastName": "Bardock "
-            }
-         
-        ],
-        "author": {
-              "firstName": "ARNOLD",
-                "lastName": "BOROW"
-
-        },
-        "startDate": "2022-05-23",
-        "endDate": "2022-05-24"
+       "name" : "Salmon Meeting",
+  "responsiblePerson" : "Salmon",
+  "description" : "New Meeting",
+  "category" : "CODE_MONKEY",
+  "type" : "LIVE",
+  "participant" : [ {
+    "firstName" : "Salmon",
+    "lastName" : "Norvi"
+  }
+  ],
+  "author" : {
+    "firstName" : "Salmon",
+    "lastName" : "Norvi"
+  },
+   {
+    "firstName" : "Salmon2",
+    "lastName" : "Norvi2"
+  },
+  
+  "startDate" : "2022-05-25",
+  "endDate" : "2022-05-26"
     }
 ```
 #### Add Person to meeting
@@ -188,53 +167,51 @@ You will Get:
 ```json
 [
     {
-        "id": 2,
-        "name": "Arnold Meeting May",
-        "responsiblePerson": "Arnold",
-        "description": "Arnold Meeting",
-        "category": "SHORT",
-        "type": "LIVE",
-        "participant": [
-            {
-                "firstName": "ARNOLD",
-                "lastName": "BOROW",
-                "author": true
-            }
-        ],
-        "author": {
-            "firstName": "ARNOLD",
-            "lastName": "BOROW",
-            "author": true
-        },
-        "startDate": "2022-05-23",
-        "endDate": "2022-05-24"
-    },
-    {
-        "id": 4,
-        "name": "Arnold Meeting May",
-        "responsiblePerson": "Arnold",
-        "description": "Arnold Meeting",
-        "category": "SHORT",
-        "type": "LIVE",
-        "participant": [
-            {
-                "firstName": "ARNOLD",
-                "lastName": "BOROW",
-                "author": true
-            },
-            {
-                "firstName": "ERIK",
-                "lastName": "Bardock ",
-                "author": false
-            }
-        ],
-        "author": {
-            "firstName": "ARNOLD",
-            "lastName": "BOROW",
-            "author": true
-        },
-        "startDate": "2022-05-23",
-        "endDate": "2022-05-24"
+      "id" : 1,
+  "name" : "Arnold Meeting May",
+  "responsiblePerson" : "Arnold",
+  "description" : "Arnold Meeting",
+  "category" : "SHORT",
+  "type" : "LIVE",
+  "participant" : [ {
+    "firstName" : "ARNOLD",
+    "lastName" : "BOROW",
+    "author" : true,
+    "timeNow" : "2022-05-23 16:08:05"
+  }, {
+    "firstName" : "JAC",
+    "lastName" : "King",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:08:05"
+  }, {
+    "firstName" : "JAC",
+    "lastName" : "MARON",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:08:05"
+  }, {
+    "firstName" : "Nikita",
+    "lastName" : "Baroc",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:09:04"
+  }, {
+    "firstName" : "Melek",
+    "lastName" : "Zahari",
+    "author" : false,
+    "timeNow" : "2022-05-23 16:40:20"
+  }, {
+    "firstName" : "Emmanuil",
+    "lastName" : "Murugan",
+    "author" : false,
+    "timeNow" : "2022-05-23 17:01:10"
+  } ],
+  "author" : {
+    "firstName" : "ARNOLD",
+    "lastName" : "BOROW",
+    "author" : true,
+    "timeNow" : "2022-05-23 16:08:05"
+  },
+  "startDate" : "2022-05-23",
+  "endDate" : "2022-05-24"
     }
 ]
 ```
